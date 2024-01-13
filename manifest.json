@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Remove YTD Popup Container",
+  "version": "1.0",
+  "description": "A simple Chrome extension to remove stop youtube ads blocker from YouTube.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
